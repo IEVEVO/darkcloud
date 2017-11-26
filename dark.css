@@ -1,0 +1,193 @@
+body, .sc-text {
+	background: #111 !important;
+	color: #aaa !important;
+}
+
+a, a:visited, .sc-link-dark, .soundContext__usernameLink, .localeSelector__cancel, .localeSelectorContent__listItem, .sc-font {
+	color: #ddd !important;
+}
+a:hover {
+	color: #fff !important;
+}
+
+
+/* menus */
+.g-dark, .g-dark-bg, .profileMenu__list {
+	background: #222 !important;
+}
+
+.headerSearch__input {
+	background: #000 !important;
+}
+
+
+/* stream - likes/reblogs/etc bar */
+.sc-button-toolbar {
+	background: #111 !important;
+}
+.sc-button-group button, .sc-button-medium, .sc-button-small {
+	background: #000 !important;
+	color: #ddd !important;
+	border-color: #ddd !important;
+}
+.sc-button-group button:hover, .sc-button-group button:focus {
+	color: #fff !important;
+}
+
+.moreMenu__goUpsell {
+	color: #f30 !important;
+}
+
+
+/* stream - tracks */
+.sc-media:hover, .sc-link-light:hover {
+	background: #222 !important;
+}
+.compactTrackListItem__trackTitle {
+	color: #ddd !important;
+}
+.sc-border-light, .sc-border-light-bottom, .sc-border-light-tops, .sc-border-box {
+	border-color: #555 !important;
+}
+
+.soundTitle__additionalContainer, .searchTitle {
+	background: #222 !important;
+}
+
+
+
+/* modals */
+.modalWhiteout, .modal, .g-z-index-modal-background, .showBackground {
+	background: rgba(0,0,0,0.9) !important;
+}
+
+.modal__modal, .tabs__tabs, .g-modal-section {
+	background: #222 !important;
+}
+.sc-input, .tokenInput__input {
+	background: #111 !important;
+	color: #ddd !important;
+}
+.recipientChooser__name {
+	color: #222 !important;
+}
+
+.localeSelectorContent {
+	background: #222 !important;
+	color: #aaa !important;
+}
+.localeSelector__cancel {
+	color: #ddd !important;
+}
+
+
+/* profile page */
+.dropbar__content {
+	background: #222 !important;
+}
+.relativeTime span, .soundTitle__uploadTime {
+	background: transparent !important;
+}
+.statsBadge__upsell-text span {
+	color: #ddd !important;
+}
+
+.profileHeaderInfo:hover {
+	background: transparent !important;
+}
+
+.g-tabs {
+	border-color: #aaa !important;
+}
+.g-tabs-link {
+	border-color: #aaa !important;
+}
+.g-tabs-link:hover {
+	border-color: #f30 !important;
+}
+.g-tabs-link .active {
+	color: #f30 !important;
+}
+
+.dialog, .roundedDialog__centertop, .dialog__arrow {
+	background: #222 !important;
+	color: #ddd !important;
+}
+
+.moreActions__button:hover {
+	background: #333 !important;
+}
+
+
+/* collection page */
+.readMoreTile__countWrapper {
+	background: rgba(0,0,0,0.8) !important;
+}
+.linkMenu__list {
+	background: #222 !important;
+	color: #ddd !important;
+	border-color: #222 !important;
+}
+
+
+/* player */
+.playControls__inner, .playControls__bg {
+	border-color: #555 !important;
+	background: #222 !important;
+	color: #ddd !important;
+}
+.playControls__control, .volume__button, .playbackSoundBadge__showQueue, .sc-button::before {
+	filter: invert(100%);
+}
+
+.commentForm__wrapper {
+	background: #222 !important;
+	border-color: #aaa !important;
+}
+.commentForm__input {
+	background: #111 !important;
+	color: #ddd !important;
+}
+
+
+/* blog */
+.hfeed, .sc-aux-container, .g-circle-player a, .sc-header-wipeout {
+	background: #111 !important;
+}
+.footer, .sc-aux-footer {
+	background: #222 !important;
+}
+
+
+/* minor pages */
+.g-upsell-container, .sidebarInfoBox__body, .container {
+	background: #111 !important;
+}
+
+.rainbow {
+	filter: invert(100%);
+}
+code {
+	color: #ddd !important;
+	border-color: #aaa !important;
+}
+
+kbd.sc-font {
+	background: #111 !important;
+}
+
+.article-vote {
+	color: #ddd !important;
+}
+
+.blockCheckbox__title {
+	color: #ddd !important;
+}
+.blockCheckbox__blockContent .showChecked {
+	color: #aaa !important;
+}
+
+.hintButton {
+	background: #f30 !important;
+	color: #222 !important;
+}
