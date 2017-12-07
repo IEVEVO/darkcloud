@@ -1,4 +1,4 @@
-body, .sc-text {
+body {
 	background: #111 !important;
 	color: #aaa !important;
 }
@@ -23,15 +23,16 @@ a:hover {
 
 /* stream - likes/reblogs/etc bar */
 .sc-button-toolbar {
-	background: #111 !important;
+	//background: #111 !important;
 }
-.sc-button-group button, .sc-button-medium, .sc-button-small {
-	background: #000 !important;
-	color: #ddd !important;
-	border-color: #ddd !important;
+.sc-button-group button, .sc-button-medium, .sc-button-small, .inlineError.sc-button {
+	background: #000;
+	color: #ddd;
+	border-color: #aaa;
 }
-.sc-button-group button:hover, .sc-button-group button:focus {
+.sc-button-group button:hover, .sc-button-group button:focus, .inlineError.sc-button:hover {
 	color: #fff !important;
+	border-color: #f30 !important;
 }
 
 .moreMenu__goUpsell {
@@ -40,20 +41,36 @@ a:hover {
 
 
 /* stream - tracks */
-.sc-media:hover, .sc-link-light:hover {
+.sc-link-light:hover {
 	background: #222 !important;
 }
 .compactTrackListItem__trackTitle {
 	color: #ddd !important;
 }
+.compactTrackListItem.active {
+	background: #333 !important;
+}
 .sc-border-light, .sc-border-light-bottom, .sc-border-light-tops, .sc-border-box {
 	border-color: #555 !important;
 }
 
-.soundTitle__additionalContainer, .searchTitle {
-	background: #222 !important;
+.soundTitle__additionalContainer, .searchTitle, .listenAttributes__attribute:hover {
+	background: #111 !important;
 }
 
+.listenEngagement {
+	border-color: transparent !important;
+}
+.truncatedAudioInfo__wrapper::after, .paging-eof, .truncatedUserDescription__content::after, .editTrackItem__additional {
+	filter: invert(100%);
+}
+
+.commentPopover__wrapper {
+	color: #fff !important;
+}
+.m-isReply.m-creatorComment {
+	background: #333 !important;
+}
 
 
 /* modals */
@@ -85,7 +102,7 @@ a:hover {
 .dropbar__content {
 	background: #222 !important;
 }
-.relativeTime span, .soundTitle__uploadTime {
+.relativeTime span, .soundTitle__uploadTime, .soundTitle__uploadTime span {
 	background: transparent !important;
 }
 .statsBadge__upsell-text span {
@@ -118,6 +135,14 @@ a:hover {
 	background: #333 !important;
 }
 
+.truncatedUserDescription__wrapper::after {
+	background: linear-gradient(to-top, #111, rgba(0,0,0,0)), #111 !important;
+}
+
+.moreActions__group {
+	border-color: #555 !important;
+}
+
 
 /* collection page */
 .readMoreTile__countWrapper {
@@ -130,14 +155,38 @@ a:hover {
 }
 
 
+/* playlists */
+.trackItem.hover, .trackItem.active, .chartTrack:hover, .m-playing {
+	background: #333 !important;
+}
+.trackItem__additional {
+	background: rgba(0,0,0,0.5) !important;
+}
+
+
 /* player */
 .playControls__inner, .playControls__bg {
 	border-color: #555 !important;
 	background: #222 !important;
 	color: #ddd !important;
 }
-.playControls__control, .volume__button, .playbackSoundBadge__showQueue, .sc-button::before {
+.playControls__control, .volume__button, .playbackSoundBadge__showQueue, .sc-button::before, .queue__hide {
 	filter: invert(100%);
+}
+
+.sc-button-play::before {
+	filter: invert(0%);
+}
+
+.playbackTimeline__duration {
+	color: #aaa !important;
+}
+.volume__sliderWrapper {
+	background: #222 !important;
+}
+
+.visualSound__wrapper {
+	background: #111 !important;
 }
 
 .commentForm__wrapper {
@@ -147,6 +196,79 @@ a:hover {
 .commentForm__input {
 	background: #111 !important;
 	color: #ddd !important;
+}
+
+.commentPopover__wrapper {
+	background: rgba(0,0,0,0.2) !important;
+}
+.commentPopover__username {
+	color: #ddd !important;
+}
+.commentPopover__body {
+	color: #aaa !important;
+}
+
+.userItem:hover, .queue__itemWrapper, .queue__scrollableInner {
+	background: #111 !important;
+}
+
+.queue__scrollable {
+	background: #000 !important;
+}
+.queue__panel, .queueFallback__stationMode, .queue__itemView:hover, .m-dimmed:hover {
+	background: #222 !important;
+}
+.m-active, .sc-media .active {
+	background: #333 !important;
+}
+
+
+/* upload + edit */
+.uploadMain__chooserContainer, .uploadMain__foot, .soundEditTabs, .activeUpload__form, .audibleEditForm__form, .uploadSuccessSharing, .activeUpload__shareContainer, .audibleEditForm__audio {
+	background: #222 !important;
+}
+
+.ui-datepicker-div, .sc-licence-icon::after {
+	filter: invert(100%);
+	color: #222 !important;
+}
+.dropdownMenu {
+	background: #333 !important;
+	
+}
+
+.trackManager__upsellWrapper, .select__select, .audibleEditForm__foot {
+	background: #111 !important;
+	color: #aaa !important;
+}
+.soundBadge:hover, .soundBadge.hover, .soundBadge.selected {
+	background: #333 !important;
+	border-color: #aaa !important;
+}
+.soundBadge__extra, .soundBadge__additional, .createPlaylistSuggestion__addContainer {
+	background: transparent !important;
+}
+
+.userAudibleSearch {
+	background: #222 !important;
+	color: #aaa !important;
+}
+
+.editTrackModalButton {
+	background: #222 !important;
+	color: #aaa !important;
+}
+.editTrackModalButton:hover {
+	background: #555 !important;
+}
+
+
+/* messages */
+.conversation__actions, .inboxItem.active, .inboxItem:hover {
+	background: #222 !important;
+}
+.conversationMessage:hover {
+	background: #111 !important;
 }
 
 
@@ -160,11 +282,20 @@ a:hover {
 
 
 /* minor pages */
-.g-upsell-container, .sidebarInfoBox__body, .container {
+.g-upsell-container, .sidebarInfoBox__body, .container, .topStatsModule__header, .topStatsModule__upsell, .statsOverview__separator, .topStats__wrapper:hover, .l-top, #main-wrapper, .sessions__formContainer, .authorize-token, .uploadLoggedOut__testimonials, .uploadLoggedOut__testimonialListItem, .premiumContent__block:hover, .premiumContent__twoColumnBlock.sc-media:hover {
 	background: #111 !important;
+	color: #ddd !important;
 }
 
-.rainbow {
+.sc-button-facebook::before, .sc-button-google::before {
+	filter: invert(0%);
+}
+
+.topStatsItemPlaceholder__text::before, .topStatsItemPlaceholder__text::after, .fullListenHero, .dashbox__box, .gritter-item, .uploadLoggedOut__buttonLearnMore {
+	background: #000 !important;
+}
+
+.rainbow, .moreActions__button::before, .sc-ministats-sounds::before, .searchOptions__navigationLink img, .compactTrackListItem__additional, .reportCopyright::before {
 	filter: invert(100%);
 }
 code {
@@ -176,7 +307,7 @@ kbd.sc-font {
 	background: #111 !important;
 }
 
-.article-vote {
+.article-vote, .gritter-item, #main-wrapper-inner {
 	color: #ddd !important;
 }
 
@@ -190,4 +321,13 @@ kbd.sc-font {
 .hintButton {
 	background: #f30 !important;
 	color: #222 !important;
+}
+
+.reportCopyright {
+	background: transparent !important;
+}
+
+.sc-button-active, .sc-button-selected {
+	color: #f30 !important;
+	border-color: #f30 !important;
 }
