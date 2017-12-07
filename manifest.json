@@ -1,12 +1,12 @@
 {
 	"manifest_version": 2,
 	"name": "DarkCloud",
-	"version": "1.0",
+	"version": "1.2",
 	
 	"description": "Changes soundcloud.com to a dark theme.",
 	
 	"icons": {
-		"48": "icons/logo.png"
+		"256": "icons/logo.png"
 	},
 	
 	"permissions": [
