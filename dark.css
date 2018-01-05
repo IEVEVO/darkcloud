@@ -47,14 +47,14 @@ a:hover {
 .compactTrackListItem__trackTitle {
 	color: #ddd !important;
 }
-.compactTrackListItem.active {
+.compactTrackListItem.active, .clickToPlay.active {
 	background: #333 !important;
 }
 .sc-border-light, .sc-border-light-bottom, .sc-border-light-tops, .sc-border-box {
 	border-color: #555 !important;
 }
 
-.soundTitle__additionalContainer, .searchTitle, .listenAttributes__attribute:hover {
+.searchTitle, .listenAttributes__attribute:hover {
 	background: #111 !important;
 }
 
@@ -159,8 +159,18 @@ a:hover {
 .trackItem.hover, .trackItem.active, .chartTrack:hover, .m-playing {
 	background: #333 !important;
 }
+.soundTitle {
+	background: transparent !important;
+}
 .trackItem__additional {
 	background: rgba(0,0,0,0.5) !important;
+}
+
+.m-upcoming:hover {
+	background: #333 !important;
+}
+.removeFromNextUp::before {
+	filter: invert(100%);
 }
 
 
@@ -199,13 +209,17 @@ a:hover {
 }
 
 .commentPopover__wrapper {
-	background: rgba(0,0,0,0.2) !important;
+	/*background: rgba(0,0,0,0.2) !important;*/
 }
 .commentPopover__username {
-	color: #ddd !important;
+	color: #fff !important;
 }
-.commentPopover__body {
+.sound__body .commentPopover__body {
 	color: #aaa !important;
+}
+
+.fullHero__waveform .commentPopover__body {
+	color: #ddd !important;
 }
 
 .userItem:hover, .queue__itemWrapper, .queue__scrollableInner {
