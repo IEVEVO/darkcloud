@@ -217,6 +217,10 @@ a:hover {
 .sound__body .commentPopover__body {
 	color: #aaa !important;
 }
+.sound__soundActions {
+	background: #111 !important;
+}
+
 
 .fullHero__waveform .commentPopover__body {
 	color: #ddd !important;
