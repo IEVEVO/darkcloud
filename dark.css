@@ -7,7 +7,7 @@ a, a:visited, .sc-link-dark, .soundContext__usernameLink, .localeSelector__cance
 	color: #ddd !important;
 }
 a:hover {
-	color: #fff !important;
+	color: #eee !important;
 }
 
 
@@ -25,14 +25,29 @@ a:hover {
 .sc-button-toolbar {
 	//background: #111 !important;
 }
-.sc-button-group button, .sc-button-medium, .sc-button-small, .inlineError.sc-button {
-	background: #000;
-	color: #ddd;
-	border-color: #aaa;
+.sc-button-group button, .sc-button-group-small button, .sc-button-medium, .sc-button-small, .inlineError.sc-button, .sc-button-delete {
+	background-color: #000 !important;
+	color: #ddd !important;
+	border-color: #aaa !important;
+}
+.sc-button-group button:hover, .sc-button-group-small button:hover, .sc-button-medium:hover, .sc-button-small:hover, .inlineError.sc-button:hover, .sc-button-delete:hover {
+	background-color: #222 !important;
 }
 .sc-button-group button:hover, .sc-button-group button:focus, .inlineError.sc-button:hover {
-	color: #fff !important;
+	color: #eee !important;
 	border-color: #f30 !important;
+}
+.sc-button-group-small button::before {
+	background-color: transparent !important;
+}
+
+.sc-button-follow, .selectionModulePlaylistLink a {
+	background: #111 !important;
+	color: #eee !important;
+}
+
+.sc-button-icon {
+	color: #eee !important;
 }
 
 .moreMenu__goUpsell {
@@ -66,7 +81,7 @@ a:hover {
 }
 
 .commentPopover__wrapper {
-	color: #fff !important;
+	color: #eee !important;
 }
 .m-isReply.m-creatorComment {
 	background: #333 !important;
@@ -131,6 +146,9 @@ a:hover {
 	color: #ddd !important;
 }
 
+.moreActions__button {
+	background: #222 !important;
+}
 .moreActions__button:hover {
 	background: #333 !important;
 }
@@ -141,6 +159,10 @@ a:hover {
 
 .moreActions__group {
 	border-color: #555 !important;
+}
+
+.see-more-top-tracks {
+	background: #333 !important;
 }
 
 
@@ -212,7 +234,7 @@ a:hover {
 	/*background: rgba(0,0,0,0.2) !important;*/
 }
 .commentPopover__username {
-	color: #fff !important;
+	color: #eee !important;
 }
 .sound__body .commentPopover__body {
 	color: #aaa !important;
@@ -242,17 +264,29 @@ a:hover {
 
 
 /* upload + edit */
-.uploadMain__chooserContainer, .uploadMain__foot, .soundEditTabs, .activeUpload__form, .audibleEditForm__form, .uploadSuccessSharing, .activeUpload__shareContainer, .audibleEditForm__audio {
+.uploadMain__chooserContainer, .uploadMain__foot, .soundEditTabs, .activeUpload__form, .audibleEditForm__form, .uploadSuccessSharing, .activeUpload__shareContainer, .audibleEditForm__audio, .quotaMeterWrapper {
 	background: #222 !important;
+}
+.uploadMain h1 {
+	color: #ddd;
 }
 
 .ui-datepicker-div, .sc-licence-icon::after {
 	filter: invert(100%);
 	color: #222 !important;
 }
-.dropdownMenu {
+.dropdownMenu, .dropdown-plain, .sc-button-dropdown {
 	background: #333 !important;
-	
+	color: #ddd !important;
+}
+
+.sc-button[disabled] {
+	background: #555 !important;
+	border-color: #555 !important;
+	color: #aaa !important;
+}
+.sc-button-nostyle {
+	color: #888 !important;
 }
 
 .trackManager__upsellWrapper, .select__select, .audibleEditForm__foot {
@@ -278,6 +312,10 @@ a:hover {
 }
 .editTrackModalButton:hover {
 	background: #555 !important;
+}
+
+.quotaMeter__link {
+	background: #111 !important;
 }
 
 
@@ -320,6 +358,12 @@ code {
 	color: #ddd !important;
 	border-color: #aaa !important;
 }
+.compactTrackList__item:hover .compactTrackListItem {
+	background: #333 !important;
+}
+.compactTrackListItem__number, .compactTrackListItem__plays {
+	color: #888 !important;
+}
 
 kbd.sc-font {
 	background: #111 !important;
@@ -348,4 +392,9 @@ kbd.sc-font {
 .sc-button-active, .sc-button-selected {
 	color: #f30 !important;
 	border-color: #f30 !important;
+}
+.sc-button-medium.sc-button-startstation {
+	background: #111 !important;
+	color: #eee !important;
+	border-color: #eee !important;
 }
