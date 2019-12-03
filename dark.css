@@ -10,6 +10,15 @@ a:hover {
 	color: #eee !important;
 }
 
+.banner {
+	background: #000 !important;
+	color: #888 !important;
+	border-bottom: 1px solid #fff;
+}
+.banner a {
+	color: #f30 !important;
+}
+
 
 /* menus */
 .g-dark, .g-dark-bg, .profileMenu__list {
