@@ -407,3 +407,9 @@ kbd.sc-font {
 	color: #eee !important;
 	border-color: #eee !important;
 }
+.sc-classic .headerMenu.m-light {
+	background-color: #111 !important;
+}
+.sc-classic .m-light .headerMenu__link:focus, .sc-classic .m-light .headerMenu__link:hover {
+	background-color: #ffffff17 !important;
+}
