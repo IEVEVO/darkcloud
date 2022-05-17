@@ -19,6 +19,10 @@ a:hover {
 	color: #f30 !important;
 }
 
+.sc-classic .inlineError {
+	background-color: #111 !important;
+}
+
 
 /* menus */
 .g-dark, .g-dark-bg, .profileMenu__list {
@@ -27,6 +31,39 @@ a:hover {
 
 .headerSearch__input {
 	background: #000 !important;
+}
+
+	/* header dropdowns */
+.sc-classic .headerMenu.m-light,
+.sc-classic .dropdownContent__header, 
+.sc-classic .dropdownContent__footerLink {
+	background-color: #111 !important;
+}
+.headerMenu__link {
+	font-weight: 400 !important;
+}
+
+.sc-classic .dropdownContent__listItem {
+	background-color: #111 !important;
+	color: #aaa !important;
+}
+.sc-classic .notificationBadge__main {
+	color: #aaa !important;
+}
+.sc-classic .notificationBadge__username {
+	color: #fff !important;
+}
+
+.sc-classic .dropdownContent__listItem:hover,
+.sc-classic .dropdownContent__listItem:focus {
+	background-color: #222 !important;
+}
+
+.sc-classic .notificationBadge__link:focus, 
+.sc-classic .notificationBadge__link:hover,
+.sc-classic .m-light .headerMenu__link:focus, 
+.sc-classic .m-light .headerMenu__link:hover {
+	background-color: #ffffff17 !important;
 }
 
 
@@ -58,9 +95,36 @@ a:hover {
 .sc-button-icon {
 	color: #eee !important;
 }
+.sc-button-icon::after {
+	border-color: #eee !important;
+}
+
+.sc-button-white {
+	background: #222 !important;
+	color: #fff !important;
+}
+.sc-button-white:hover, .sc-button-white:focus {
+	background: #f30 !important;
+}
 
 .moreMenu__goUpsell {
 	color: #f30 !important;
+}
+
+
+	/* insights panel */
+.insightsSidebarModule__title {
+	color: #eee !important;
+}
+
+.quotaMeterWrapper {
+	background: #111 !important;
+}
+.quotaMeter {
+	color: #aaa !important;
+}
+.quotaMeter__dropdownButton::after {
+	filter: invert(100%) !important;
 }
 
 
@@ -273,7 +337,7 @@ a:hover {
 
 
 /* upload + edit */
-.uploadMain__chooserContainer, .uploadMain__foot, .soundEditTabs, .activeUpload__form, .audibleEditForm__form, .uploadSuccessSharing, .activeUpload__shareContainer, .audibleEditForm__audio, .quotaMeterWrapper {
+.uploadMain__chooserContainer, .uploadMain__foot, .soundEditTabs, .activeUpload__form, .audibleEditForm__form, .uploadSuccessSharing, .activeUpload__shareContainer, .audibleEditForm__audio {
 	background: #222 !important;
 }
 .uploadMain h1 {
@@ -406,10 +470,4 @@ kbd.sc-font {
 	background: #111 !important;
 	color: #eee !important;
 	border-color: #eee !important;
-}
-.sc-classic .headerMenu.m-light {
-	background-color: #111 !important;
-}
-.sc-classic .m-light .headerMenu__link:focus, .sc-classic .m-light .headerMenu__link:hover {
-	background-color: #ffffff17 !important;
 }
