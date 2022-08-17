@@ -275,7 +275,8 @@ a:hover {
 	background: #222 !important;
 	color: #ddd !important;
 }
-.playControls__control, .volume__button, .playbackSoundBadge__showQueue, .sc-button::before, .queue__hide {
+
+.playControls__control, .volume__button, .playbackSoundBadge__showQueue, .sc-button::before:not(.playableTile__actionButton), .queue__hide {
 	filter: invert(100%);
 }
 
