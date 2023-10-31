@@ -10,6 +10,67 @@ a:hover {
 	color: #eee !important;
 }
 
+.commentItem__body {
+    color: #eee;
+}
+
+.commentItem__timestampLink, .commentItem__timestampLink:hover, .commentItem__timestampLink:visited {
+    background-color: grey;
+}
+
+.sc-classic .l-listen-wrapper, .l-about-rows, .sc-border-light-right {
+    border-right: 1px solid #313131;
+}
+
+.sc-classic .l-listen-wrapper .l-about-rows {
+    border-right: 1px solid #313131;
+}
+
+.sc-classic .g-tabs {
+    border-bottom: unset;
+}
+
+.sc-border-light-top {
+    border-top: unset;
+}
+
+.sc-classic .g-tabs-link, .sc-classic .g-tabs-link:visited {
+    border-bottom: unset;
+}
+
+.sc-classic .listenEngagement {
+    box-shadow: unset;
+}
+
+.sc-classic .commentForm__input {
+    border: 1px solid #313131;
+}
+
+.commentForm__wrapper {
+    border: #888 !important
+}
+
+.sc-classic .gritter-item-wrapper {
+    background-color: black;
+    border: unset;
+}
+
+.sc-classic .mixedSelectionModule {
+    border-bottom: 1px solid #313131
+}
+
+/* menu buttons */
+
+.sc-button-medium.sc-button-more::before, .sc-button-medium.sc-button-copylink::before, .sc-button-medium.sc-button-share::before, .sc-button-medium.sc-button-repost::before, .sc-button-medium.sc-button-like::before  {
+    filter: brightness(300%);
+}
+
+.sc-button-active.sc-button-medium.sc-button-more::before, .sc-button-selected.sc-button-medium.sc-button-more::before, .sc-button-selected.sc-button-medium.sc-button-repost::before, .sc-button-selected.sc-button-medium.sc-button-like:active::before, .sc-button-selected.sc-button-medium.sc-button-like:focus::before, .sc-button-selected.sc-button-medium.sc-button-like::before {
+    filter: brightness(100%);
+}
+
+/* end of menu buttons */
+
 .banner {
 	background: #000 !important;
 	color: #888 !important;
