@@ -10,11 +10,11 @@ a:hover {
 	color: #eee !important;
 }
 
-.commentItem__body {
+.commentItem__body,  .commentItem__username {
     color: #eee;
 }
 
-.commentItem__timestampLink, .commentItem__timestampLink:hover, .commentItem__timestampLink:visited {
+.commentItem__timestampLink{
     background-color: grey;
 }
 
@@ -65,7 +65,7 @@ a:hover {
 
 /* menu buttons */
 
-.sc-button-medium.sc-button-more::before, .sc-button-medium.sc-button-copylink::before, .sc-button-medium.sc-button-share::before, .sc-button-medium.sc-button-repost::before, .sc-button-medium.sc-button-like::before, .sc-classic .repeatControl.m-none, .sc-classic .shuffleControl::before, .sc-classic .skipControl__next, .sc-classic .playControl.playing, .sc-classic .playControl, .sc-classic .skipControl__previous, .sc-classic .volume[data-level="6"] .volume__button, .sc-classic .volume[data-level="7"] .volume__button, .sc-classic .volume[data-level="8"] .volume__button, .sc-classic .volume[data-level="9"] .volume__button, .sc-classic .volume[data-level="10"] .volume__button, .sc-classic .volume.muted .volume__button, .sc-classic .volume[data-level="1"] .volume__button, .sc-classic .volume[data-level="2"] .volume__button, .sc-classic .volume[data-level="3"] .volume__button, .sc-classic .volume[data-level="4"] .volume__button, .sc-classic .volume[data-level="5"] .volume__button {
+.sc-button-medium.sc-button-more::before, .sc-button-medium.sc-button-copylink::before, .sc-button-medium.sc-button-share::before, .sc-button-medium.sc-button-repost::before, .sc-button-medium.sc-button-like::before, .sc-classic .repeatControl.m-none, .sc-classic .shuffleControl::before, .sc-classic .skipControl__next, .sc-classic .playControl.playing, .sc-classic .playControl, .sc-classic .skipControl__previous, .sc-classic .volume[data-level="6"] .volume__button, .sc-classic .volume[data-level="7"] .volume__button, .sc-classic .volume[data-level="8"] .volume__button, .sc-classic .volume[data-level="9"] .volume__button, .sc-classic .volume[data-level="10"] .volume__button, .sc-classic .volume.muted .volume__button, .sc-classic .volume[data-level="1"] .volume__button, .sc-classic .volume[data-level="2"] .volume__button, .sc-classic .volume[data-level="3"] .volume__button, .sc-classic .volume[data-level="4"] .volume__button, .sc-classic .volume[data-level="5"] .volume__button, .sc-button-medium.sc-button-delete::before {
     filter: brightness(300%);
 }
 
