@@ -1,7 +1,7 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "DarkCloud - SoundCloud Dark Mode",
-	"version": "1.6.3",
+	"version": "1.6.4",
 	
 	"description": "Changes soundcloud.com to a dark theme.",
 	
