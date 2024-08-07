@@ -537,3 +537,8 @@ kbd.sc-font {
 	color: #eee !important;
 	border-color: #eee !important;
 }
+
+.commentItem__body, .commentItem__replyButton, .commentItem__usernameLink {
+	color: #fff !important; /*Fixed black text in comments to white*/
+
+} 
