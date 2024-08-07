@@ -4,7 +4,7 @@ body {
 }
 
 a, a:visited, .sc-link-dark, .soundContext__usernameLink, .localeSelector__cancel, .localeSelectorContent__listItem, .sc-font {
-	color: #ddd !important;
+	color: #38d; !important;
 }
 a:hover {
 	color: #eee !important;
@@ -26,16 +26,8 @@ a:hover {
     border-right: 1px solid #313131;
 }
 
-.sc-classic .g-tabs {
-    border-bottom: unset;
-}
-
 .sc-border-light-top {
     border-top: unset;
-}
-
-.sc-classic .g-tabs-link, .sc-classic .g-tabs-link:visited {
-    border-bottom: unset;
 }
 
 .sc-classic .listenEngagement {
@@ -264,19 +256,6 @@ a:hover {
 
 .profileHeaderInfo:hover {
 	background: transparent !important;
-}
-
-.g-tabs {
-	border-color: #aaa !important;
-}
-.g-tabs-link {
-	border-color: #aaa !important;
-}
-.g-tabs-link:hover {
-	border-color: #f30 !important;
-}
-.g-tabs-link .active {
-	color: #f30 !important;
 }
 
 .dialog, .roundedDialog__centertop, .dialog__arrow {
@@ -540,5 +519,202 @@ kbd.sc-font {
 
 .commentItem__body, .commentItem__replyButton, .commentItem__usernameLink {
 	color: #fff !important; /*Fixed black text in comments to white*/
+}
 
-} 
+.artistShortcutTile__username span {
+	color: #fff !important; /*Correction of the artist's name on the homepage*/
+}
+
+.sc-button-selected.sc-button-medium.sc-button-like:before { 
+	filter: invert(0%) !important;
+}
+
+.sc-button-medium.sc-button-like:before{
+	filter: invert(100%) !important;
+}
+
+.sc-button-small.sc-button-like:before{
+	filter: invert(100%) !important;
+}
+
+.sc-button-small.sc-button-selected.sc-button-like:before, .sc-button-small.sc-button-selected.sc-button-like.sc-button-lightfg:before, .sc-button-small.sc-button-selected.sc-button-like.sc-button-visual:before{
+	filter: invert(0%) !important; /*Correction of the like icon so that it is more visible*/
+}
+
+.sc-classic .playbackSoundBadge__titleLink, .sc-classic .playbackSoundBadge__titleLink:visited {
+	color: #fff !important;
+}
+
+.playbackSoundBadge__showQueue{
+	filter: invert(100%) !important;
+}
+
+.sc-button-queue:before{
+	filter: invert(100%) !important;
+}
+
+.queue{
+	background-color: #111214 !important
+}
+.queue__hide:focus, .queue__hide:hover, .queue__hide{
+	filter: invert(100%) !important;
+}
+
+.queue__itemWrapper{
+	background-color: #151619 !important
+}
+
+.queueFallback__stationMode{
+	border-top: 1px solid #232323 !important
+}
+
+.queueItemView:hover, .queueItemView.m-active{
+	background: #151619 !important
+}
+
+.queue__hide:focus, .queue__hide:hover, .queue__hide{
+	background-color: white !important;
+}
+
+.queue__dragCover .m-active {
+	background-color: black !important; /*Correction of the queue icon so that it is more visible*/
+}
+
+.sc-button-medium.sc-button-addtoset:before{
+	filter: invert(100%) !important;
+}
+
+.localeSelector_language{
+	color: #f50 !important;
+}
+
+.sc-classic .playableTile__mainHeading{
+	font-size: 14px;
+}
+  .sc-classic .playableTile__heading{
+	line-height: 1.4;
+}
+
+.playableTile__heading{
+	width: 100%;
+	display: block;
+}
+.sc-type-light{
+	font-weight: 100;
+	color: #999;
+}
+.sc-truncate{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-break: normal;
+}
+.sc-font-light{
+	font-weight: 100;
+}
+.sc-font, .sc-font-light{
+	font-family: Inter,sans-serif;
+}
+a, a:visited{
+	color: #38d;
+	text-decoration: none; /*Color correction of the titles and the artist on the homepage*/
+}
+
+.sc-button-medium.sc-button-startstation:before{
+	filter: invert(100%) !important; /*Correction of the station icon*/
+}
+
+.sc-button-small.sc-button-share:before{
+	filter: invert(100%) !important;
+}
+
+.sc-button-medium.sc-button-share:before{
+	filter: invert(100%) !important /*Correction of the share icon*/
+}
+
+.sc-button-medium.sc-button-message:before{
+	filter: invert(100%) !important; /*Correction of the message icon*/
+}
+
+.sc-button-small.sc-button-more:before{
+	filter: invert(100%) !important; 
+}
+.sc-button-selected.sc-button-medium.sc-button-more:before, .sc-button-active.sc-button-medium.sc-button-more:before{
+	filter: invert(0%) !important;
+}
+.sc-button-medium.sc-button-more:before{
+	filter: invert(100%) !important
+}
+.sc-button-small.sc-button-more.sc-button-lightfg:before{
+	filter: invert(0%) !important; /*Correction of the more icon*/
+}
+
+.sc-button-selected.sc-button-medium.sc-button-repost:before{
+	filter: invert(0%) !important;
+}
+
+.sc-button-medium.sc-button-repost:before{
+	filter: invert(100%) !important
+}
+
+.sc-button-small.sc-button-repost:before{
+	filter: invert(100%) !important;
+}
+
+.sc-button-small.sc-button-selected.sc-button-repost:before, .sc-button-small.sc-button-selected.sc-button-repost.sc-button-lightfg:before, .sc-button-small.sc-button-selected.sc-button-repost.sc-button-visual:before{
+	filter: invert(0%) !important; /*Correction of the repost icon*/
+}
+
+.repostOverlay--wide .repostOverlay__form, .repostOverlay__header, .repostOverlay__container, .repostOverlay__youReposted, .sc-ministats, .sc-ministats-small, .sc-ministats-reposts, .repostOverlay__messageRepostIcon{
+	filter: invert(100%) !important;
+}
+
+.sc-button-medium.sc-button-copylink:before{
+	filter: invert(100%) !important
+}
+
+.sc-button-small.sc-button-copylink:before{
+	filter: invert(100%) !important;
+}
+
+.sc-button-small.sc-button-selected.sc-button-copylink:before, .sc-button-small.sc-button-selected.sc-button-copylink.sc-button-lightfg:before, .sc-button-small.sc-button-selected.sc-button-copylink.sc-button-visual:before{
+	filter: invert(0%) !important; /*Correction of the copylink icon*/
+}
+
+
+.sc-button {
+  color: #fff !important;
+  border: 0px solid #fff !important; /*Correction of the overall appearance for better readability.*/
+}
+
+.g-tabs-link, .g-tabs-link:visited{
+	color: #8b9191 !important
+}
+
+.g-tabs-link.active{
+	color: #f50 !important
+}
+
+.g-tabs{
+	border-bottom: 1px solid #44494f !important
+}
+
+.g-tabs-link:hover, .g-tabs-link:focus{
+	border-color: #fff !important
+}
+
+a.sc-link-dark {
+    color: #333 !important;
+	filter: invert(100%) !important;
+}
+
+a.sc-link-dark:hover {
+    color: #000 !important; /* Slightly lighter color on hover */
+	filter: invert(100%) !important;
+}
+
+
+.soundBadge .soundTitle__username{
+	filter: invert(100%) !important;
+}
+
