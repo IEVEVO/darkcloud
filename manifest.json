@@ -15,5 +15,12 @@
 			"exclude_globs": ["*://*.soundcloud.com/settings/connections"],
 			"css": ["dark.css"]
 		}
-	]
+	],
+	
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{534c6d6e-de02-417d-a38e-4007d33914b6}"
+		}
+	}
+
 }
