@@ -712,9 +712,3 @@ a.sc-link-dark:hover {
     color: #000 !important; /* Slightly lighter color on hover */
 	filter: invert(100%) !important;
 }
-
-
-.soundBadge .soundTitle__username{
-	filter: invert(100%) !important;
-}
-
