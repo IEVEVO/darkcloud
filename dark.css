@@ -3,9 +3,6 @@ body {
 	color: #aaa !important;
 }
 
-a, a:visited, .sc-link-dark, .soundContext__usernameLink, .localeSelector__cancel, .localeSelectorContent__listItem, .sc-font {
-	color: #38d; !important;
-}
 a:hover {
 	color: #eee !important;
 }
@@ -90,30 +87,15 @@ a:hover {
 	background: #000 !important;
 }
 
-	/* header dropdowns */
-.sc-classic .headerMenu.m-light,
-.sc-classic .dropdownContent__header, 
-.sc-classic .dropdownContent__footerLink {
-	background-color: #111 !important;
-}
 .headerMenu__link {
 	font-weight: 400 !important;
 }
 
-.sc-classic .dropdownContent__listItem {
-	background-color: #111 !important;
-	color: #aaa !important;
-}
 .sc-classic .notificationBadge__main {
 	color: #aaa !important;
 }
 .sc-classic .notificationBadge__username {
 	color: #fff !important;
-}
-
-.sc-classic .dropdownContent__listItem:hover,
-.sc-classic .dropdownContent__listItem:focus {
-	background-color: #222 !important;
 }
 
 .sc-classic .notificationBadge__link:focus, 
@@ -179,9 +161,6 @@ a:hover {
 }
 .quotaMeter {
 	color: #aaa !important;
-}
-.quotaMeter__dropdownButton::after {
-	filter: invert(100%) !important;
 }
 
 
@@ -296,7 +275,7 @@ a:hover {
 
 /* playlists */
 .trackItem.hover, .trackItem.active, .chartTrack:hover, .m-playing {
-	background: #333 !important;
+	background: #000 !important;
 }
 .soundTitle {
 	background: transparent !important;
@@ -393,10 +372,34 @@ a:hover {
 	filter: invert(100%);
 	color: #222 !important;
 }
-.dropdownMenu, .dropdown-plain, .sc-button-dropdown {
-	background: #333 !important;
-	color: #ddd !important;
+
+/*dropdowns menus*/
+.sc-button-dropdown:focus:not(.sc-button-disabled):not(:disabled){
+	box-shadow: 0 0 0 4px #353535 !important;
 }
+.sc-classic .profileMenu .headerMenu__link{
+	background: #242424;color: white;
+}
+.sc-classic .m-light .headerMenu__link, .sc-classic .m-light .headerMenu__link:focus, .sc-classic .m-light .headerMenu__link:hover {
+	color: black !important
+}
+.sc-classic .profileMenu .headerMenu__link {
+	color: white !important;
+}
+.sc-classic .profileMenu .headerMenu__link:after {
+	filter: invert(1)
+}
+.sc-classic .profileMenu:hover .headerMenu__link:hover{
+	background: white;color: black;
+}
+.sc-classic .profileMenu:hover .headerMenu__link:hover .sc-classic .profileMenu .headerMenu__link:after{
+	filter: none !important
+}
+.sc-classic .headerMenu.m-light {background-color: #272727 !important;border:2px solid #242424 !important} /* User menu dropwdown border  */
+.sc-classic .dropdownContent__container {filter:invert(1) hue-rotate(188deg)}
+.sc-classic .notificationBadge.m-small .notificationBadge__main, .sc-classic .notificationBadge.m-small .notificationBadge__side {filter: invert(1) hue-rotate(172deg)}
+.sc-classic .dropdownContent__header h2{filter: invert(1);}
+.sc-classic .dropdownContent__footerLink {filter:brightness(1) !important}
 
 .sc-button[disabled] {
 	background: #555 !important;
@@ -615,10 +618,6 @@ kbd.sc-font {
 .sc-font, .sc-font-light{
 	font-family: Inter,sans-serif;
 }
-a, a:visited{
-	color: #38d;
-	text-decoration: none; /*Color correction of the titles and the artist on the homepage*/
-}
 
 .sc-button-medium.sc-button-startstation:before{
 	filter: invert(100%) !important; /*Correction of the station icon*/
@@ -664,6 +663,23 @@ a, a:visited{
 .sc-button-small.sc-button-selected.sc-button-repost:before, .sc-button-small.sc-button-selected.sc-button-repost.sc-button-lightfg:before, .sc-button-small.sc-button-selected.sc-button-repost.sc-button-visual:before{
 	filter: invert(0%) !important; /*Correction of the repost icon*/
 }
+
+.sc-button-selected.sc-button-medium.sc-button-secondary:before{
+	filter: invert(0%) !important;
+}
+
+.sc-button-medium.sc-button-secondary:before{
+	filter: invert(100%) !important
+}
+
+.sc-button-small.sc-button-secondary:before{
+	filter: invert(100%) !important;
+}
+
+.sc-button-small.sc-button-selected.sc-button-secondary:before, .sc-button-small.sc-button-selected.sc-button-secondary.sc-button-lightfg:before, .sc-button-small.sc-button-selected.sc-button-secondary.sc-button-visual:before{
+	filter: invert(0%) !important; /*Correction of the repost icon*/
+}
+
 
 .repostOverlay--wide .repostOverlay__form, .repostOverlay__header, .repostOverlay__container, .repostOverlay__youReposted, .sc-ministats, .sc-ministats-small, .sc-ministats-reposts, .repostOverlay__messageRepostIcon{
 	filter: invert(100%) !important;
@@ -712,3 +728,61 @@ a.sc-link-dark:hover {
     color: #000 !important; /* Slightly lighter color on hover */
 	filter: invert(100%) !important;
 }
+
+.sc-button-small.sc-button-icon:not(.sc-button-stretch-icon), .sc-button-small.sc-button-responsive:not(.sc-button-stretch-icon) {
+	background-color: #000 !important;
+}
+
+.sc-classic .profileMenu .headerMenu__link{
+	background: #242424;color: white;
+}
+.sc-classic .m-light .headerMenu__link, .sc-classic .m-light .headerMenu__link:focus, .sc-classic .m-light .headerMenu__link:hover {
+	color: black !important
+}
+.sc-classic .profileMenu .headerMenu__link {
+	color: white !important;
+}
+.sc-classic .profileMenu .headerMenu__link:after {
+	filter: invert(1)
+}
+.sc-classic .profileMenu:hover .headerMenu__link:hover{
+	background: white;color: black;
+}
+.sc-classic .profileMenu:hover .headerMenu__link:hover .sc-classic .profileMenu .headerMenu__link:after{
+	filter: none !important
+}
+.sc-classic .headerMenu.m-light {
+	background-color: #272727 !important;border:2px solid #242424 !important
+}
+.sc-classic .dropdownContent__container {
+	filter:invert(1) hue-rotate(188deg)
+}
+.sc-classic .notificationBadge.m-small .notificationBadge__main, .sc-classic .notificationBadge.m-small .notificationBadge__side {
+	filter: invert(1) hue-rotate(172deg)
+}
+.sc-classic .dropdownContent__header h2{
+	filter: invert(1);
+}
+.sc-classic .dropdownContent__footerLink {
+	filter:brightness(1) !important
+}
+.sc-classic .notificationBadge__main{
+	color:white
+}
+.notificationBadge__main>span {
+	color: #b6b6b6
+}
+.sc-classic .m-light .headerMenu__list {
+	border:none !important
+}
+.sc-classic .m-light .headerMenu__link, .sc-classic .m-light .headerMenu__link:focus, .sc-classic .m-light .headerMenu__link:hover {
+	color: white !important;
+}
+.sc-classic .headerMenu .m-light{
+	background-color: #242424 !important;border: 1px solid grey !important;border-top: 0px !important
+}
+
+.g-nav-item > .g-nav-link {
+  color: #fff !important;
+}
+
